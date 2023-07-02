@@ -142,10 +142,12 @@ class TextView(QuietTextView):
 
     def print_code(self, mutant, original):
         mutant_src = codegen.to_source(mutant)
-        mutant_src = codegen.add_line_numbers(mutant_src)
-        original_src = codegen.to_source(original)
-        original_src = codegen.add_line_numbers(original_src)
-        self._print_diff(mutant_src, original_src)
+        print("\n{}\n".format('-' * 80) + mutant_src + "\n{}".format('-' * 80))
+
+        # mutant_src = codegen.add_line_numbers(mutant_src)
+        # original_src = codegen.to_source(original)
+        # original_src = codegen.add_line_numbers(original_src)
+        # self._print_diff(mutant_src, original_src)
 
     def _print_diff(self, mutant_src, original_src):
         diff = self._create_diff(mutant_src, original_src)
