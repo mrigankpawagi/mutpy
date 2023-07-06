@@ -33,6 +33,11 @@ setup(
     extras_require={
         'pytest': ["pytest>=3.0"]
     },
+    entry_points={
+        'console_scripts': [
+            'mutpy = mutpy.mut:main'
+        ]
+    },
     test_suite='mutpy.test',
     classifiers=[
         'Programming Language :: Python :: 3.4',
