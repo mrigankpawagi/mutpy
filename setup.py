@@ -35,7 +35,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'mutpy = mutpy:main'
+            'mutpy = mutpy:mainProc'
         ]
     },
     test_suite='mutpy.test',
