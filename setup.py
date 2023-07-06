@@ -28,7 +28,7 @@ setup(
     download_url='https://github.com/mutpy/mutpy',
     packages=['mutpy', 'mutpy.operators', 'mutpy.test_runners'],
     package_data={'mutpy': ['templates/*.html']},
-    scripts=['bin/mut.py'],
+    scripts=['bin/mutpy'],
     install_requires=requirements,
     extras_require={
         'pytest': ["pytest>=3.0"]
