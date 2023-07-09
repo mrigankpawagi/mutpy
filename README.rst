@@ -1,3 +1,10 @@
+This is a modified fork of MutPy.
+----
+- The error regarding the ``isAlive`` method has been fixed in ``utils.py``.
+- The entire code of each mutant is printed, instead of just the diff. 
+- MutPy is invoked by ``mutpy`` and not ``mut.py`` in the command prompt or shell. 
+=====
+
 MutPy
 =====
 
